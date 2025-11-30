@@ -1,79 +1,28 @@
-@layer nieuwsbrief {
+#nieuwsbrief {
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  padding: var(--padding);
+  border-radius: var(--border-radius-default);
+}
 
-  
-  #nieuwsbrief {
-    background-color: var(--background-dark);
-    color: var(--text);
-    font-family: var(--font-family);
-    padding: var(--padding);
-    border-radius: var(--border-radius-default);
-    max-width: 500px;
-    margin: 0 auto 40px auto;
-  }
+#nieuwsbrief h2 {
+  margin-bottom: var(--margin);
+}
 
-  #nieuwsbrief h2 {
-    font-size: var(--headline);
-    color: var(--accent);
-    margin-bottom: var(--margin);
-  }
+#nieuwsbrief p {
+  margin-bottom: var(--margin);
+}
 
-  #nieuwsbrief p {
-    font-size: var(--body);
-    margin-bottom: var(--margin);
-  }
 
-  /* Inputs */
-  #nieuwsbrief input[type="text"],
-  #nieuwsbrief input[type="email"] {
-    padding: var(--input-padding-y) var(--input-padding-x);
-    background-color: var(--background-inset);
-    color: var(--text);
-    border: none;
-    border-radius: var(--border-radius-default);
-    font-family: var(--font-family);
-    font-size: var(--label);
-    box-shadow: var(--shadow-inset);
-    width: 100%;
-    margin-top: 4px;
-    margin-bottom: 8px;
-    display: block;
-  }
+#nieuwsbrief input[type="text"],
+#nieuwsbrief input[type="email"] {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  display: block;
+}
 
-  input::placeholder {
-    color: var(--background-light);
-  }
 
-  input:focus {
-    outline: none;
-    box-shadow: var(--shadow-inset), var(--focus-border);
-  }
-
-  /* Foutmeldingen */
-  label.error-message {
-    color: var(--error-color);
-    font-size: var(--label);
-    margin-top: 4px;
-    display: block;
-  }
-
-  /* Submit button */
-  #nieuwsbrief input[type="submit"] {
-    padding: var(--button-padding-y) var(--button-padding-x);
-    background-color: var(--accent);
-    color: var(--background-dark);
-    border: none;
-    border-radius: var(--border-radius-default);
-    font-weight: 600;
-    font-size: var(--label);
-    font-family: var(--font-family);
-    cursor: pointer;
-    box-shadow: var(--shadow-button), var(--shadow-small);
-    margin-top: var(--margin);
-  }
-
-  #nieuwsbrief input[type="submit"]:hover {
-    background-color: var(--background-light);
-    box-shadow: var(--shadow-small);
-  }
-
+#nieuwsbrief input[type="submit"] {
+  margin-top: var(--margin);
 }
